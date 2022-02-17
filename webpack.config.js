@@ -5,6 +5,11 @@ module.exports = {
   output: {
     path:path.resolve(__dirname, "dist"),
   },
+  devServer: {
+    port:8080,
+    contentBase: path.resolve(__dirname, "dist"),
+    hot: true
+  },
   mode: "development",
   module: {
     rules: [
