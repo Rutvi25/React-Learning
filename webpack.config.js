@@ -7,12 +7,18 @@ module.exports = {
   },
   devServer: {
     port:8080,
-    contentBase: path.resolve(__dirname, "dist"),
+    static: {
+      directory: path.resolve(__dirname, "dist")
+    },
     hot: true
   },
   mode: "development",
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader","css-loader"]
+      },
       {
         test: /\.?js$/,
         exclude: /node_modules/,
