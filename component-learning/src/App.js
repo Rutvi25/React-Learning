@@ -5,6 +5,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import LifeCycleA from './components/LifeCycleA';
 function App() {
   return (
     <div className='App'>
@@ -14,7 +15,8 @@ function App() {
       <Message />
       <Counter />
       <EventBind /><br/>
-      <ParentComponent />
+      <ParentComponent /><br/>
+      <LifeCycleA />
     </div>
   );
 }
