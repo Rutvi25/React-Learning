@@ -20,7 +20,7 @@ const withCounter = (WrappedComponent, incrementNumber) => {
         <WrappedComponent 
           count={this.state.count} 
           incrementCount={this.incrementCount}
-          { ...this.props} 
+          { ...this.props}  // *spread operator: to pass the remaining components
         />
       )
     }
