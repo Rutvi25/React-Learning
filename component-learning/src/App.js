@@ -6,6 +6,8 @@ import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import LifeCycleA from './components/LifeCycleA';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 function App() {
   return (
     <div className='App'>
@@ -16,7 +18,9 @@ function App() {
       <Counter />
       <EventBind /><br/>
       <ParentComponent /><br/>
-      <LifeCycleA />
+      <LifeCycleA /><br/>
+      <ClickCounter name='John'/>
+      <HoverCounter />
     </div>
   );
 }
