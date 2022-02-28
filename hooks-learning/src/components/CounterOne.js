@@ -1,3 +1,4 @@
+// useReducer Learning (Simple State and Action)
 import React, {useReducer} from 'react'
 
 const initialState = 0
@@ -10,7 +11,7 @@ const reducer = (state, action) => {
     case 'reset':
       return initialState
     default:
-      return state - 1
+      return state
   }
 }
 
