@@ -6,6 +6,8 @@ import CounterOne from './components/CounterOne';
 import CounterThree from './components/CounterThree';
 import CounterTwo from './components/CounterTwo';
 import DataFetching from './components/DataFetching';
+import DataFetchingOne from './components/DataFetchingOne';
+import DataFetchingTwo from './components/DataFetchingTwo';
 //import ClassCounterOne from './components/ClassCounterOne';
 import HookCounter from './components/HookCounter';
 import HookCounterFour from './components/HookCounterFour';
@@ -40,8 +42,9 @@ function App() {
       </UserContext.Provider>
       <CounterOne /><br />
       <CounterTwo /><br />
-      <CounterThree/>
-      
+      <CounterThree/><br />
+      <DataFetchingOne /><br />
+      <DataFetchingTwo />
     </div>
   );
 }
