@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import ClassCounter from './components/ClassCounter';
 import ComponentC from './components/ComponentC';
+import CounterOne from './components/CounterOne';
 import DataFetching from './components/DataFetching';
 //import ClassCounterOne from './components/ClassCounterOne';
 import HookCounter from './components/HookCounter';
@@ -35,6 +36,7 @@ function App() {
           <ComponentC />
         </ChannelContext.Provider>
       </UserContext.Provider>
+      <CounterOne />
       
     </div>
   );
