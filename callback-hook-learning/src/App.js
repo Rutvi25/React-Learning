@@ -7,6 +7,7 @@ import DocTitleOne from './components/DocTitleOne';
 import DocTitleTwo from './components/DocTitleTwo';
 import HookTimer from './components/HookTimer';
 import ParentComponent from './components/ParentComponent';
+import ParentComponentOne from './components/ParentComponentOne';
 import RefHook from './components/RefHook';
 import UserForm from './components/UserForm';
 
@@ -23,6 +24,7 @@ function App() {
       <CounterOne />
       <CounterTwo /><br />
       <UserForm />
+      <ParentComponentOne />
     </div>
   );
 }
