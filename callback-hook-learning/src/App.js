@@ -8,12 +8,14 @@ import DocTitleTwo from './components/DocTitleTwo';
 import HookTimer from './components/HookTimer';
 import ParentComponent from './components/ParentComponent';
 import ParentComponentOne from './components/ParentComponentOne';
+import UseLayoutEffectExample from './components/UseLayoutEffectExample';
 import RefHook from './components/RefHook';
 import UserForm from './components/UserForm';
 
 function App() {
   return (
     <div className="App">
+      <UseLayoutEffectExample /><br/>
       <ParentComponent /><br />
       <Counter /><br />
       <RefHook /><br />
@@ -24,7 +26,7 @@ function App() {
       <CounterOne />
       <CounterTwo /><br />
       <UserForm />
-      <ParentComponentOne />
+      <ParentComponentOne /><br/>
     </div>
   );
 }
