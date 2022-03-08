@@ -1,6 +1,7 @@
 const redux = require('redux')
 const createStore = redux.createStore
 const combineReducers = redux.combineReducers
+
 // Action
 const BUY_CAKE = 'BUT_CAKE'
 const BUY_ICECREAM = 'BUY_ICECREAM'
@@ -77,4 +78,3 @@ store.dispatch(buyCake())
 store.dispatch(buyIceCream())
 store.dispatch(buyIceCream())
 unsubscribe()
-
