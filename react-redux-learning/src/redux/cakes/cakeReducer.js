@@ -1,4 +1,5 @@
 import { BUY_CAKE } from "./cakeTypes"
+
 const initialState = {
   totalCakes: 10
 }
