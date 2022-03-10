@@ -70,11 +70,10 @@ function AddTodo() {
         </button>
       </div>
   }
+  
   return (
     <>
-      <>
-        {showForm}
-      </>
+      {showForm}
     </>
   )
 }
