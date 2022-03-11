@@ -6,7 +6,6 @@ import UserTask from '../UserTask/UserTask';
 import './TodoList.css'
 
 function TodoList() {
- 
   const listItems = useSelector((state) => state.todoReducers.listItems)
   let displayTaskList;
   if(listItems.length === 0) {
@@ -14,11 +13,13 @@ function TodoList() {
   }
   else {
     <>
-      {displayTaskList = listItems.map((task) => {
-        return(
-          <UserTask key={task.id} title={task.data}/>  
-        )
-      })}   
+      {
+        displayTaskList = listItems.map((task) => {
+          return(
+            <UserTask key={task.id} title={task.data}/>  
+          )
+        })
+      }   
     </> 
   }
   return (
