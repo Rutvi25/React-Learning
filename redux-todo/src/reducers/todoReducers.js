@@ -35,13 +35,13 @@ const todoReducers = (state = initialData, action) => {
         ...state,
         listItems : state.listItems.map((listItem) => {
           if(listItem.id === action.id) {
-            return listItem;
-          }
-          else {
             return {
               ...listItem,
               todoCompletionStatus: !listItem.todoCompletionStatus
             }
+          }
+          else {
+            return listItem;            
           }
         })
       }

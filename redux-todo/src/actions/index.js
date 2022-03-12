@@ -8,12 +8,6 @@ export const addTodo = (data) => {
     }
   }
 }
-export const clearStorage = (data) => {
-  return {
-    type: 'CLEAR_STORAGE',
-    data: data
-  }
-}
 export const changeStatus = (id) => {
   return {
     type: 'CHANGE_STATUS', 

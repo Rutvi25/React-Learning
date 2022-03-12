@@ -28,7 +28,7 @@ function UserTask(props) {
   }
   return(
     <div className='task'>
-      <div >
+      <div className={todoCompletionStatus? 'task-complete' : 'task-incomplete'}>
         {title}
       </div>
       {checkBox}
