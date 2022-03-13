@@ -20,7 +20,6 @@ function AddTodo() {
       setTaskTitle('')
     } 
   }
-
   // handle key events
   function handleKeyPress(e) {
     if(e.keyCode === 27) {

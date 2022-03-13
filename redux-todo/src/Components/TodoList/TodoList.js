@@ -20,10 +20,7 @@ function TodoList(props) {
           )
         })
       }   
-
     </div>
-      
-    
   }
   return (
     <div className='task-container'>
