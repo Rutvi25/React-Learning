@@ -6,6 +6,7 @@ function Menu() {
     <>
       <NavLink to='/' > About Us </NavLink>
       <NavLink to='/contact' > Contact </NavLink> 
+      <NavLink to='/user/john/doe' > User </NavLink> 
     </>
   )
 }

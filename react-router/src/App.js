@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Error from './Error';
 import './App.css';
 import Menu from './Menu';
+import User from './User';
 
 function Name() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/contact/name' element={<Name />} />
+        <Route path='/user/:fname/:lname' element={<User />} />
         <Route element={<Error />}/>
       </Routes>
     </>
