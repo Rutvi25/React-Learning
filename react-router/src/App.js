@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Error from './Error';
 import './App.css';
+import Menu from './Menu';
 
 function Name() {
   return (
@@ -15,6 +16,7 @@ function Name() {
 function App() {
   return (
     <>
+      <Menu />
       <Routes>
         <Route path='/' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
