@@ -7,7 +7,8 @@ import Heading from './components/Heading';
 import Oscar from './components/Oscar';
 import Button from './components/Button';
 import Input from './components/Input';
-import Container from './components/Container';
+// import Container from './components/Container';
+import LoggedIn from './components/states/LoggedIn';
 
 function App() {
   const personName = {
@@ -42,7 +43,11 @@ function App() {
       <Button handleClick={ (event, id) => console.log('Button Clicked!', event, id) } />
       <br /><br />
       <Input value='' handleChange={(event) => console.log(event)}/>
-      <Container styles={{border: '5px solid'}}/>
+      <br /><br />
+      {/* <Container styles={{border: '5px solid'}}/> */}
+      <br /><br />
+      <LoggedIn />
+      <br /><br />
     </div>
   );
 }
