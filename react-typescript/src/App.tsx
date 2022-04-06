@@ -9,6 +9,7 @@ import Button from './components/Button';
 import Input from './components/Input';
 // import Container from './components/Container';
 import LoggedIn from './components/states/LoggedIn';
+import User from './components/states/User';
 
 function App() {
   const personName = {
@@ -48,6 +49,7 @@ function App() {
       <br /><br />
       <LoggedIn />
       <br /><br />
+      <User />
     </div>
   );
 }
