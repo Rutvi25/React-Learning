@@ -19,6 +19,8 @@ import DomRef from './components/ref/DomRef';
 import { Counter } from './components/class/Counter';
 import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
+import List from './components/generics/List';
+import { RandomNumbers } from './components/restriction/RandomNumbers';
 
 function App() {
   const personName = {
@@ -73,6 +75,26 @@ function App() {
       <Counter message='counter value: '/>
       <br />
       <Private isLoggedIn={true} component={Profile} />
+      <br />
+      <List items={['Apple', 'Banana', 'Mango']} onClick={(item) => {console.log(item)}}/>
+      <List items={[1, 2, 3]} onClick={(item) => {console.log(item)}}/>
+      <List 
+        items={[
+          {
+            first: 'John',
+            last: 'Doe'
+          },
+          {
+            first: 'Maria',
+            last: 'Smith'
+          },
+          {
+            first: 'Clark',
+            last: 'Kent'
+          }
+      ]} onClick={(item) => {console.log(item)}}/>
+      <br />
+      <RandomNumbers value={10} isPositive />
     </div>
   );
 }
