@@ -9,11 +9,16 @@ import Button from './components/Button';
 import Input from './components/Input';
 // import Container from './components/Container';
 import LoggedIn from './components/states/LoggedIn';
-//import User from './components/states/User';
+// import User from './components/states/User';
 import User from './components/context/User'
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import Box from './components/context/Box';
 import { UserContextProvider } from './components/context/UserContext';
+import MutableRef from './components/ref/MutableRef';
+import DomRef from './components/ref/DomRef';
+import { Counter } from './components/class/Counter';
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
 
 function App() {
   const personName = {
@@ -50,7 +55,6 @@ function App() {
       <Input value='' handleChange={(event) => console.log(event)}/>
       <br /><br />
       {/* <Container styles={{border: '5px solid'}}/> */}
-      <br /><br />
       <LoggedIn />
       <br /><br />
       <User />
@@ -62,6 +66,13 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <br /><br/>
+      <DomRef />
+      <MutableRef />
+      <br />
+      <Counter message='counter value: '/>
+      <br />
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
