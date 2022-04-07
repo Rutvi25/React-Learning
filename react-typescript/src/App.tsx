@@ -21,6 +21,7 @@ import Private from './components/auth/Private';
 import Profile from './components/auth/Profile';
 import List from './components/generics/List';
 import { RandomNumbers } from './components/restriction/RandomNumbers';
+import { Toast } from './components/templateliterals/Toast';
 
 function App() {
   const personName = {
@@ -53,22 +54,22 @@ function App() {
       </Oscar>
       <br />
       <Button handleClick={ (event, id) => console.log('Button Clicked!', event, id) } />
-      <br /><br />
+      <br />
       <Input value='' handleChange={(event) => console.log(event)}/>
-      <br /><br />
+      <br />
       {/* <Container styles={{border: '5px solid'}}/> */}
       <LoggedIn />
-      <br /><br />
+      <br />
       <User />
-      <br /><br />
+      <br />
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
-      <br /><br/>
+      <br />
       <UserContextProvider>
         <User />
       </UserContextProvider>
-      <br /><br/>
+      <br />
       <DomRef />
       <MutableRef />
       <br />
@@ -95,6 +96,8 @@ function App() {
       ]} onClick={(item) => {console.log(item)}}/>
       <br />
       <RandomNumbers value={10} isPositive />
+      <br />
+      <Toast position='center' />
     </div>
   );
 }
