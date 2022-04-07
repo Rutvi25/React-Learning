@@ -22,6 +22,7 @@ import Profile from './components/auth/Profile';
 import List from './components/generics/List';
 import { RandomNumbers } from './components/restriction/RandomNumbers';
 import { Toast } from './components/templateliterals/Toast';
+import { Text } from './components/polymorphic/Text';
 
 function App() {
   const personName = {
@@ -79,25 +80,14 @@ function App() {
       <br />
       <List items={['Apple', 'Banana', 'Mango']} onClick={(item) => {console.log(item)}}/>
       <List items={[1, 2, 3]} onClick={(item) => {console.log(item)}}/>
-      <List 
-        items={[
-          {
-            first: 'John',
-            last: 'Doe'
-          },
-          {
-            first: 'Maria',
-            last: 'Smith'
-          },
-          {
-            first: 'Clark',
-            last: 'Kent'
-          }
-      ]} onClick={(item) => {console.log(item)}}/>
       <br />
       <RandomNumbers value={10} isPositive />
       <br />
       <Toast position='center' />
+      <br />
+      <Text as='h1' size='lg'>Heading</Text>
+      <Text as='p' size='md'>Paragraph</Text>
+      <Text as='label' htmlFor='someId' size='sm' color='secondary'>Label</Text>
     </div>
   );
 }
