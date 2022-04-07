@@ -9,7 +9,11 @@ import Button from './components/Button';
 import Input from './components/Input';
 // import Container from './components/Container';
 import LoggedIn from './components/states/LoggedIn';
-import User from './components/states/User';
+//import User from './components/states/User';
+import User from './components/context/User'
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import Box from './components/context/Box';
+import { UserContextProvider } from './components/context/UserContext';
 
 function App() {
   const personName = {
@@ -50,6 +54,14 @@ function App() {
       <LoggedIn />
       <br /><br />
       <User />
+      <br /><br />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      <br /><br/>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
