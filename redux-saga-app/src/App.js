@@ -1,9 +1,10 @@
 import './App.css';
+import Users from './components/UsersComponent';
 
 function App() {
   return (
     <div className="App">
-      Redux Saga
+      <Users />      
     </div>
   );
 }
